@@ -34,7 +34,7 @@ jobs:
       - name: Generate config.js
         run: |
           echo "window.CONFIG = {" > config.js
-          echo "  API_KEY: '${{ secrets.API_KEY }}'" >> config.js
+          echo "  API_KEY: '${{ secrets.GEMINI_API_KEY }}'" >> config.js
           echo "};" >> config.js
 
       - name: Setup Pages
